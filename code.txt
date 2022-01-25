@@ -1,0 +1,20 @@
+Begin
+  Se (Minima < Minima[1]) e (Minima < Minima[2]) e (Fechamento > Fechamento[1]) e (Fechamento > Abertura) then
+    PaintBar(clAzul)
+  else if (Maxima > Maxima[1]) e (Maxima > Maxima[2]) e (Fechamento < Fechamento[1]) e (Fechamento < Abertura) then
+    PaintBar(clAmarelo)
+  else if (Fechamento > Abertura) then
+    PaintBar(clVerde)
+  else if (Fechamento < Abertura) then
+    PaintBar(clVermelho)
+  else if (Fechamento = Abertura) then
+    PaintBar(clVerdeOliva);
+End;
+
+
+
+
+
+
+
+             
